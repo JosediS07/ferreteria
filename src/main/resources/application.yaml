@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ferreteria
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ferreteria_db
+    username: root
+    password: clave123456#
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect #Indica que tipo de base de datos vamos a utilzar en este caso SQL
+    show-sql: true #Nos ayuda a imprimir por consola las sentencias SQL que vamos a ir ejecutando
