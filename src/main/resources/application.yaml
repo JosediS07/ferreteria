@@ -2,11 +2,23 @@ spring:
   application:
     name: ferreteria
 
+  #Base de datos
   datasource:
     url: jdbc:mysql://localhost:3306/ferreteria_db
     username: root
     password: clave123456#
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+  #JPA Update para desarrollo
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect #Indica que tipo de base de datos vamos a utilzar en este caso SQL
     show-sql: true #Nos ayuda a imprimir por consola las sentencias SQL que vamos a ir ejecutando
+    generate-ddl: true #Constuye la tabla automaticamente desde java
+
+
+  #Spring acceso basico
+  security:
+    user:
+      password: 84ed636c-b8ff-4467-a493-7ceaed42c1d1
+      name: josedi
+
